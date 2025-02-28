@@ -672,6 +672,24 @@ footer p a:hover{
         left: 89%;
     }
 }
+@media screen and (max-width:1270px){
+    .center1{
+        top: 30%;
+        left: 32%;
+    }
+    .center2{
+        top: 30%;
+        left: 52.5%;
+    }
+    .center3{
+        top: 30%;
+        left: 71%;
+    }
+    .center4{
+        top: 30%;
+        left: 89%;
+    }
+}
 
 @media screen and (max-width:1200px){
     .section3{
