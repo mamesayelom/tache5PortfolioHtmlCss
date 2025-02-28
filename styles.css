@@ -635,43 +635,44 @@ footer p a:hover{
     color: #FFA600;
 }
 
-@media screen and (max-width:1350px){
+@media screen and (max-width:1296px){
     .center1{
         top: 30%;
-        left: 37.5%;
+        left: 34%;
     }
     .center2{
         top: 30%;
-        left: 54.5%;
+        left: 52.5%;
     }
     .center3{
         top: 30%;
-        left: 72.9%;
-    }
-    .center4{
-        top: 30%;
-        left: 89.5%;
-    }
-}
-
-@media screen and (max-width:1250px){
-    .center1{
-        top: 30%;
-        left: 31.5%;
-    }
-    .center2{
-        top: 30%;
-        left: 50.5%;
-    }
-    .center3{
-        top: 30%;
-        left: 70.3%;
+        left: 72%;
     }
     .center4{
         top: 30%;
         left: 89%;
     }
 }
+
+
+/* @media screen and (min-width:1200px){
+    .center1{
+        top: 30%;
+        left: 28%;
+    }
+    .center2{
+        top: 30%;
+        left: 48%;
+    }
+    .center3{
+        top: 30%;
+        left: 69.3%;
+    }
+    .center4{
+        top: 30%;
+        left: 88%;
+    }
+} */
 @media screen and (max-width:1200px){
     .section3{
         height: 950px;
