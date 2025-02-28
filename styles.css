@@ -635,6 +635,25 @@ footer p a:hover{
     color: #FFA600;
 }
 
+@media screen and (min-width:1358px){
+    .center1{
+        top: 30%;
+        left: 38%;
+    }
+    .center2{
+        top: 30%;
+        left: 55%;
+    }
+    .center3{
+        top: 30%;
+        left: 73.3%;
+    }
+    .center4{
+        top: 30%;
+        left: 90%;
+    }
+} 
+
 @media screen and (max-width:1296px){
     .center1{
         top: 30%;
@@ -654,25 +673,6 @@ footer p a:hover{
     }
 }
 
-
-/* @media screen and (min-width:1200px){
-    .center1{
-        top: 30%;
-        left: 28%;
-    }
-    .center2{
-        top: 30%;
-        left: 48%;
-    }
-    .center3{
-        top: 30%;
-        left: 69.3%;
-    }
-    .center4{
-        top: 30%;
-        left: 88%;
-    }
-} */
 @media screen and (max-width:1200px){
     .section3{
         height: 950px;
