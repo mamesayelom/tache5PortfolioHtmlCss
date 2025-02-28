@@ -1,0 +1,1425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', serif;
+}
+header{
+    background-image:url("Images/slider-1-1920x1080.jpg") ;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    padding-top:30px ;
+    position: relative;
+    z-index: -2;
+}
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: -1;
+}
+.orange{
+    background-color: #FFAD01;
+    height: 100px;
+    color: white;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+header .flex{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+
+}
+.localisation,.tel,.contact{
+    width: 33%;
+    display: flex;
+    gap: 20px;
+}
+.division{
+    width: 95%;
+}
+.flex i{
+margin-top: auto;
+margin-bottom: auto;
+}
+.conteneur{
+    width: 80%;
+    margin: auto;
+}
+.download{
+    background-color: #FFAD01;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-top: 30px;
+    border-radius: 5%;
+}
+.download:hover{
+    margin-top: 20px;
+    transition: 1s;
+}
+.section1{
+    height: 200px;
+    width: 100%;
+}
+.section1 .div1{
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+    background-color: white;
+}
+.section1 .div1 .image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("Images/profile-1-250x250.jpg.webp");
+    margin: auto;
+    position: relative;
+    bottom: 100px;
+}
+.section1 .h2{
+   position: relative;
+   bottom: 80px;
+}
+.section1 .h2 h2{
+    font-size: 2rem;
+ }
+ .section1 .h2 p{
+    font-size: 1.3rem;
+    color: #FFA600;
+ }
+ .section1 .b{
+    position: relative;
+    bottom: 50px; 
+}
+.section1 .b p{
+    line-height: 30px;
+}
+.section1 .icones{
+    position: relative;
+    bottom: 30px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.section1 .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #887392;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+.section1 .icon:hover{
+    background-color: #FFA600;
+    transition: 0.5s;
+}
+.section1 .icon i{
+    color: white;
+}
+
+.section2{
+    width: 100%;
+    height: 1400px;
+}
+.section2 .flex{
+    display: flex;
+    padding:50px 100px;
+    width: 100%;
+    
+}
+.section2 .flex .left{
+    width: 15%;
+    
+}
+.section2 .flex .menu{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section2 .flex .menu a:hover{
+    color: #FFA600;
+}
+.section2 .flex .menu a{
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+}
+.flex .orange2{
+    background-color: #FFAD01;
+    height: 10px;
+    width: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.section2 .flex h1,.section3 .flex h1{
+    font-size: 2rem;
+
+}
+.section2 .flex p,.section3 .flex p{
+    color: #999;
+}
+.images{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+}
+.images .div1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32%;
+    height: 20%;
+    /* border: 1px solid black; */
+}
+.images .div2{
+    position: absolute;
+    top: 0;
+    left: 34%;
+    width: 32%;
+    height: 42%;
+    /* border: 1px solid black; */
+}
+/* .images .div2 .image2{
+    height: 575px;
+} */
+.images .div3{
+    position: absolute;
+    top: 0;
+    left: 68%;
+    width: 32%;
+    height: 20%;
+    /* border: 1px solid black; */
+}
+.images .div4{
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 15%;
+    height: 20%;
+    /* border: 1px solid black; */
+}
+.images .div5{
+    position: absolute;
+    top: 22%;
+    left: 17%;
+    width: 15%;
+    height: 20%;
+    /* border: 1px solid black; */
+}
+/* .images .image4,.images .image5{
+    height: 275px;
+} */
+.images .div6{
+    position: absolute;
+    top: 22%;
+    left: 68%;
+    width: 32%;
+    height: 20%;
+    /* border: 1px solid black; */
+}
+.images .div7{
+    position: absolute;
+    top: 44%;
+    left: 0;
+    width: 32%;
+    height: 42%;
+}
+.images .div8{
+    position: absolute;
+    top: 44%;
+    left: 34%;
+    width: 32%;
+    height: 20%;
+}
+.images .div9{
+    position: absolute;
+    top: 44%;
+    left: 68%;
+    width: 32%;
+    height: 42%;
+}
+.images .div10{
+    position: absolute;
+    top: 66%;
+    left: 34%;
+    width: 15%;
+    height: 20%;
+}
+.images .div11{
+    position: absolute;
+    top: 66%;
+    left: 51%;
+    width: 15%;
+    height: 20%;
+}
+/* .images img:focus{
+    position: absolute; 
+    z-index: 999;
+    transform: scale(1.6) translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    outline: none;
+} */
+/* .images .div1{
+    overflow: hidden;
+} */
+
+.section3{
+    height: 600px;
+    padding: 100px;
+}
+.section3 .flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.section3 .flex .left{
+    width: 33.5%;
+}
+.section3 .flex .paragraghe{
+    width: 67.5%;
+    color: #777;
+    font-size: 1.05rem;
+}
+.cercles{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+svg{
+    width: 180px; 
+    height: 180px;
+    transform: rotate(-90deg);
+    /* border: 1px solid black; */
+}
+.center1{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 34.5%;
+}
+.center2{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 52.5%;
+}
+.center3{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 72%;
+}
+.center4{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 89%;
+}
+.center h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+circle{
+    fill: none;
+    /* bordure */
+    stroke: rgb(241, 173, 25);
+    stroke-width: 5px;
+    transform: translate(5px,5px);
+    /* Définit la longueur totale du tracé (périmètre du cercle) */
+    stroke-dasharray: 510;
+    /* Cache complètement le cercle */
+    stroke-dashoffset: 510;
+    
+}
+.circle1{
+     /* bordure */
+    stroke: #d1cfcf;
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+}
+.circle1_2{
+    animation: animation1 2s forwards;
+}
+.circle2{
+    /* bordure */
+   stroke: #d1cfcf;
+   stroke-width: 2px;
+   stroke-dashoffset: 0;
+}
+.circle2_2{
+   animation: animation2 2s forwards;
+}
+.circle3{
+    /* bordure */
+   stroke: #d1cfcf;
+   stroke-width: 2px;
+   stroke-dashoffset: 0;
+}
+.circle3_2{
+   animation: animation3 2s forwards;
+}
+.circle4{
+    /* bordure */
+   stroke: #d1cfcf;
+   stroke-width: 2px;
+   stroke-dashoffset: 0;
+}
+.circle4_2{
+   animation: animation4 2s forwards;
+}
+@keyframes animation1{
+    to{
+        stroke-dashoffset: 15.15;
+    }
+}
+@keyframes animation2{
+    to{
+        stroke-dashoffset: 111.1;
+    }
+}
+@keyframes animation3{
+    to{
+        stroke-dashoffset: 166.65;
+    }
+}
+@keyframes animation4{
+    to{
+        stroke-dashoffset: 15.15;
+    }
+}
+
+.section4{
+    height: 860px;
+    background-color: #28023D;
+    color: white;
+    padding: 100px;
+}
+.section4 .flex{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+.section4 .flex .left{
+    width: 30%;
+}
+.section4 .flex .right{
+    width: 65%;
+}
+.section4 .flex .left p,.grey{
+    color: #777;
+}
+.section4 .flex .right h4,.section5 .flex .right h4{
+    color: #FFAD01;
+}
+.section4 .flex .right p{
+    margin-top: 30px;
+}
+.section4 .flex .right ul{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+}
+.section4 .flex .right ul li{
+    list-style-position: inside;
+    list-style: circle;
+}
+
+.section5{
+    height: 1000px;
+    padding-top: 100px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.section5 .flex{
+    display: flex;
+    width: 85%;
+}
+.section5 .flex .left{
+    width: 25%;
+}
+.section5 .flex .right{
+    width: 70%;
+    height: 760px;
+    padding-left: 50px;
+    border-left: 2px solid #d1cfcf;
+    position: relative;
+}
+.section5 .flex .right h5{
+    color: #777;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.section5 .flex .right p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+span{
+    width: 35px;
+    height: 35px;
+    background-color: #FFAD01;
+    border-radius: 55%;
+    border: 10px solid rgba(253, 217, 139);
+    position: absolute;
+    /* border: 10px solid rgba(255, 209, 110); */
+}
+.span1{
+    top:0;
+    left: -18px;
+}
+.span2{
+    top:270px;
+    left: -18px;
+}
+.span3{
+    top:540px;
+    left: -18px;
+}
+
+.section6{
+    height: 300px;
+    background-image: url("Images/slider-2-1920x600.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+}
+.section6::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: -1;
+}
+.section6 .flex{
+    display: flex;
+    width:80%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-left: 150px;
+}
+.item1,.item2,.item3,.item4{
+    display: flex;
+    width: 25%;
+    align-items: center;
+}
+.number-area{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+.section6 p{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.n1{
+    width: 25%;
+}
+.n2{
+    width: 40%;
+}
+.n3{
+    width: 45%;
+}
+.n4{
+    width: 55%;
+}
+.n1::after {
+    content: "0";
+    animation: Animation1 0.5s linear forwards;
+}
+.n2::after {
+    content: "0";
+    animation: Animation2 0.5s linear forwards;
+}
+.n3::after {
+    content: "0";
+    animation: Animation3 0.5s linear forwards;
+}
+.n4::after {
+    content: "0";
+    animation: Animation4 0.5s linear forwards;
+}
+@keyframes Animation1 {
+    25% { content: "0"; }
+    50% { content: "1"; }
+    75% { content: "2"; }
+    100% { content: "3"; }
+}
+@keyframes Animation2 {
+    20% { content: "0"; }
+    40% { content: "1"; }
+    60% { content: "15"; }
+    80% { content: "20"; }
+    100% { content: "25"; }
+}
+@keyframes Animation3 {
+    15% { content: "0"; }
+    30% { content: "1"; }
+    45% { content: "20"; }
+    60% { content: "50"; }
+    75% { content: "100"; }
+    90% { content: "200"; }
+    100% { content: "311"; }
+}
+@keyframes Animation4 {
+    10% { content: "0"; }
+    20% { content: "1"; }
+    30% { content: "20"; }
+    40% { content: "100"; }
+    50% { content: "200"; }
+    60% { content: "300"; }
+    70% { content: "400"; }
+    80% { content: "500"; }
+    90% { content: "600"; }
+    100% { content: "732"; }
+}
+
+footer p{
+    text-align: center;
+    color: #777;
+    padding: 30px 0;
+    background: #28023D;
+}
+footer p a{
+    color: #777;
+    text-decoration: none;
+}
+footer p a:hover{
+    color: #FFA600;
+}
+
+@media  screen and (max-width:1100px) {
+    header{
+        height: 700px;
+    }
+    header .flex{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 1.3rem;
+    }
+    .orange{
+        height: 200px;
+    }
+    .section1 .div1{
+        top: 400px;
+        width: 70%;
+    }
+
+    .section2{
+        height: 2300px;
+    }
+    .images{
+        position: relative;
+        width: 100%;
+        height: 70%;
+    }
+    .images .div1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49%;
+        height: 20%;
+    }
+    .images .div2{
+        position: absolute;
+        top: 0;
+        left: 51%;
+        width: 49%;
+        height: 42%;
+    }
+    .images .div3{
+        position: absolute;
+        top: 22%;
+        left: 0;
+        width: 49%;
+        height: 20%;
+    }
+    .images .div4{
+        position: absolute;
+        top: 44%;
+        left: 51%;
+        width: 23%;
+        height: 20%;
+        
+    }
+    .images .div5{
+        position: absolute;
+        top: 44%;
+        left: 77%;
+        width: 23%;
+        height: 20%;
+        
+    }
+    .images .div6{
+        position: absolute;
+        top: 44%;
+        left: 0;
+        width: 49%;
+        height: 20%;
+    }
+    .images .div7{
+        position: absolute;
+        top: 66%;
+        left: 0;
+        width: 49%;
+        height: 42%;
+    }
+     .images .div8{
+        position: absolute;
+        top: 66%;
+        left: 51%;
+        width: 49%;
+        height: 20%;
+    }
+    
+    .images .div9{
+        position: absolute;
+        top: 88%;
+        left: 51%;
+        width: 49%;
+        height: 42%;
+    }
+    .images .div10{
+        position: absolute;
+        top: 110%;
+        left: 0%;
+        width: 23%;
+        height: 20%;
+    }
+    .images .div11{
+        position: absolute;
+        top: 110%;
+        left: 26%;
+        width: 23%;
+        height: 20%;
+    } 
+
+     .section3{
+        height: 950px;
+     }
+    .cercles{
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+        width: 60%;
+        height: 400px;
+        float: right;
+        transform: scale(1.3);
+        transform-origin: center;
+    }
+
+    .center1{
+        position: absolute;
+        text-align: center;
+        top: 15%;
+        left: 13%;
+    }
+    .center2{
+        position: absolute;
+        text-align: center;
+        top: 15%;
+        left: 66%;
+    }
+    .center3{
+        position: absolute;
+        text-align: center;
+        top: 68%;
+        left: 20%;
+    }
+    .center4{
+        position: absolute;
+        text-align: center;
+        top: 68%;
+        left: 70%;
+    }
+
+    .section4{
+        height: 1000px;
+     }
+
+    .section5{
+        height: 1200px;
+    }
+    .section5 .flex .right p{
+        width: 430px;
+    }
+    .section5 .flex{
+        display: flex;
+        width: 70%;
+    }
+    .section5 .flex .left{
+        width: 30%;
+    }
+    .section5 .flex .right{
+        height: 990px;
+    }
+    .span2{
+        top:345px;
+    }
+    .span3{
+        top:694px;
+    }
+
+    .section6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item1,.item2,.item3,.item4{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .section6 .flex{
+        gap: 70px;
+        flex-wrap: wrap;
+        width: 50%;
+        margin-left: 0;
+    }
+    .n1{
+        width: 60%;
+    }
+    .n2{
+        width: 100%;
+    }
+    .n3{
+        width: 100%;
+    }
+    .n4{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .orange{
+        height: 260px;
+    }
+    .section1 .div1{
+        top: 470px;
+    }
+    .section2 .flex{
+        padding:20px 40px;
+        
+    }
+    .section2 .flex .left{
+        width: 40%;
+        
+    }
+    .section2 .flex .menu{
+        width: 60%;
+        flex-wrap: wrap;
+    }
+
+    .section2{
+        height: 1700px;
+    }
+    .images{
+        position: relative;
+        width: 100%;
+        height: 90%;
+    }
+    .images .div1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49%;
+        height: 15%;
+    }
+    .images .div2{
+        position: absolute;
+        top: 0;
+        left: 51%;
+        width: 49%;
+        height: 31%;
+    }
+    .images .div3{
+        position: absolute;
+        top: 16%;
+        left: 0;
+        width: 49%;
+        height: 15%;
+    }
+    .images .div4{
+        position: absolute;
+        top: 32%;
+        left: 51%;
+        width: 23%;
+        height: 15%;
+        
+    }
+    .images .div5{
+        position: absolute;
+        top: 32%;
+        left: 77%;
+        width: 23%;
+        height: 15%;
+        
+    }
+    .images .div6{
+        position: absolute;
+        top: 32%;
+        left: 0;
+        width: 49%;
+        height: 15%;
+    }
+    .images .div7{
+        position: absolute;
+        top: 48%;
+        left: 0;
+        width: 49%;
+        height: 31%;
+    }
+     .images .div8{
+        position: absolute;
+        top: 48%;
+        left: 51%;
+        width: 49%;
+        height: 15%;
+    }
+    
+    .images .div9{
+        position: absolute;
+        top: 64%;
+        left: 51%;
+        width: 49%;
+        height: 31%;
+    }
+    .images .div10{
+        position: absolute;
+        top: 80%;
+        left: 0%;
+        width: 23%;
+        height: 15%;
+    }
+    .images .div11{
+        position: absolute;
+        top: 80%;
+        left: 26%;
+        width: 23%;
+        height: 15%;
+    } 
+    .section3{
+        height: 1000px;
+     }
+     .section4{
+        height: 1100px;
+     }
+    .section5 .flex .right{
+        border: none;
+    }
+    .span1{
+        display: none;
+    }
+    .span2{
+        display: none;
+    }
+    .span3{
+        display: none;
+    }
+}
+
+@media screen and (max-width:819px){
+    .section1 .div1{
+        width: 80%;
+    }
+    .section2{
+        height: 1500px;
+    }
+    .section2 .flex .left{
+        width: 30%;
+        
+    }
+    .section2 .flex .menu{
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    .images{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .images .div1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49%;
+        height: 13%;
+    }
+    .images .div2{
+        position: absolute;
+        top: 0;
+        left: 51%;
+        width: 49%;
+        height: 27%;
+    }
+    .images .div3{
+        position: absolute;
+        top: 14%;
+        left: 0;
+        width: 49%;
+        height: 13%;
+    }
+    .images .div4{
+        position: absolute;
+        top: 28%;
+        left: 51%;
+        width: 23%;
+        height: 13%;
+        
+    }
+    .images .div5{
+        position: absolute;
+        top: 28%;
+        left: 77%;
+        width: 23%;
+        height: 13%;
+        
+    }
+    .images .div6{
+        position: absolute;
+        top: 28%;
+        left: 0;
+        width: 49%;
+        height: 13%;
+    }
+    .images .div7{
+        position: absolute;
+        top: 42%;
+        left: 0;
+        width: 49%;
+        height: 27%;
+    }
+     .images .div8{
+        position: absolute;
+        top: 42%;
+        left: 51%;
+        width: 49%;
+        height: 13%;
+    }
+    
+    .images .div9{
+        position: absolute;
+        top: 56%;
+        left: 51%;
+        width: 49%;
+        height: 27%;
+    }
+    .images .div10{
+        position: absolute;
+        top: 70%;
+        left: 0%;
+        width: 23%;
+        height: 13%;
+    }
+    .images .div11{
+        position: absolute;
+        top: 70%;
+        left: 26%;
+        width: 23%;
+        height: 13%;
+    } 
+
+    .section3{
+        height: 1000px;
+        padding: 50px;
+     }
+     .section5{
+        padding: 50px;
+     }
+     .section5 .flex{
+        width: 100%;
+     }
+    .cercles{
+        width: 70%;  
+    }
+    
+    
+}
+
+@media screen and (max-width:750px){
+    header .orange .flex{
+        display: block;
+    }
+    .localisation,.tel,.contact{
+        width: 100%;
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .contact{
+        padding-bottom: 0;
+    }
+   
+}
+@media screen and (max-width:715px){
+    .section2 .flex{
+        padding:20px 40px;
+        
+    }
+    .section4{
+        height: 1050px;
+        padding: 50px;
+    }
+    .section5{
+        height: 1300px;
+    }
+    .section5 .flex .right p{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:630px){
+    .section1{
+        height: 280px;
+    }
+    .section1 .div1{
+        top: 500px;
+        width: 90%;
+    }
+    .section2{
+        height: 2800px;
+    }
+    .section2 .flex{
+        display: block;
+        
+    }
+    .section2 .flex .left{
+        width: 40%;
+        padding-bottom: 40px;
+        
+    }
+    .section2 .flex .menu{
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    .section2 .images .div{
+        position: static;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    .images{
+        position: relative;
+        width: 100%;
+        height: 10%;
+    }
+    .images .div1{
+        width: 70%;
+        height: 70%;
+    }
+    .images .div2{
+        width: 70%;
+        height: 141%;
+    }
+    .images .div3{
+      
+        width: 70%;
+        height: 70%;
+    }
+    .images .div4{
+        width: 33%;
+        height: 70%;
+        
+    }
+    .images .div5{
+        position: absolute;
+        top: 302.5%;
+        left: 37%;
+        width: 33%;
+        height: 70%;
+        
+    }
+    .images .div6{
+        width: 70%;
+        height: 70%;
+    }
+    .images .div7{
+        width: 70%;
+        height: 141%;
+    }
+     .images .div8{
+        width: 70%;
+        height: 70%;
+    }
+    
+    .images .div9{
+        width: 70%;
+        height: 141%;
+    }
+    .images .div10{
+        width: 33%;
+        height: 70%;
+    }
+    .images .div11{
+        position: absolute;
+        top: 830%;
+        left: 37%;
+        width: 33%;
+        height: 70%;
+    } 
+    .section3{
+        height: 1050px;
+    }
+    .section3 .flex{
+        display: block;
+    }
+    .section3 .flex .left{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .section3 .flex .paragraghe{
+        width: 100%;
+        color: #777;
+        font-size: 1.05rem;
+    }
+    .cercles{
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    .center1{
+        top: 15%;
+        left: 21%;
+    }
+    .center2{
+        top: 15%;
+        left: 58%;
+    }
+    .center3{
+        top: 68%;
+        left: 27%;
+    }
+    .center4{
+        top: 68%;
+        left: 63%;
+    }
+    .section4 .flex{
+        display: block;
+        width: 100%;
+    }
+    .section4 .flex .left{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .section4 .flex .right{
+        width: 100%;
+    }
+    .section5 .flex{
+        display: block;
+        width: 100%;
+    }
+    .section5 .flex .left{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .section5 .flex .right{
+        width: 100%;
+        padding-left: 0;
+    }
+    .section5 .flex .right p{
+        width: 100%;
+    }
+    .section6{
+        height: 300px;
+    }
+    .section6 .flex{
+        display: block;
+    }
+    .number-area{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .section6 p{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .item1,.item2,.item3,.item4{
+        width: 100%;
+        justify-content: center;
+    }
+    .n1{
+        width: 15%;
+    }
+    .n2{
+        width: 30%;
+    }
+    .n3{
+        width: 30%;
+    }
+    .n4{
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .section3{
+        height: 1500px;
+    }
+    .section3 .flex .left{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .cercles{
+        display: block;
+        width: 180px;
+    }
+    .center1{
+        top: 15%;
+        left: 17%;
+    }
+    .center2{
+        top: 63%;
+        left: 20%;
+    }
+    .center3{
+        top: 110%;
+        left: 34%;
+    }
+    .center4{
+        top: 158%;
+        left: 34%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .section3{
+        height: 1600px;
+    }
+    .section4{
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .section3{
+        height: 1650px;
+        padding: 20px;
+    }
+    .section4{
+        height: 1200px;
+        padding: 20px;
+    }
+    .section5{
+        height: 1400px;
+        padding: 20px;
+    }
+    .number-area{
+        font-size: 2rem;
+       
+    }
+    .section6 p{
+        
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .conteneur{
+        width: 90%;
+    }
+    .section3{
+        height: 1700px;
+    }
+    .section4{
+        height: 1300px;
+    }
+    .section5{
+        height: 1500px;
+    }
+
+    .images .div1{
+        width: 100%;
+    }
+    .images .div2{
+        width: 100%;
+    }
+    .images .div3{
+      
+        width: 100%;
+    }
+    .images .div4{
+        width: 48%;
+    }
+    .images .div5{
+        top: 302.5%;
+        left: 52%;
+        width: 48%;
+        
+    }
+    .images .div6{
+        width: 100%;
+    }
+    .images .div7{
+        width: 100%;
+    }
+     .images .div8{
+        width: 100%;
+    }
+    
+    .images .div9{
+        width: 100%;
+    }
+    .images .div10{
+        width: 48%;
+    }
+    .images .div11{
+        width: 48%;
+        left: 176px;
+        
+    } 
+}
+
