@@ -144,7 +144,7 @@ margin-bottom: auto;
 
 .section2{
     width: 100%;
-    height: 1400px;
+    max-height: 210vh;
 }
 .section2 .flex{
     display: flex;
@@ -185,105 +185,56 @@ margin-bottom: auto;
 .section2 .flex p,.section3 .flex p{
     color: #999;
 }
-.images{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    
+}
 .images img{
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: cover;/* Ajuste l’image pour remplir son conteneur sans distorsion(L’image s’adapte bien sans être déformée) */
 }
-.images .div1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32%;
-    height: 20%;
-    /* border: 1px solid black; */
+.images .image1{
+    grid-column: span 2;
+    grid-row: span 1;
 }
-.images .div2{
-    position: absolute;
-    top: 0;
-    left: 34%;
-    width: 32%;
-    height: 42%;
-    /* border: 1px solid black; */
+.images .image2{
+    grid-column: span 2;
+    grid-row: span 2;
 }
-/* .images .div2 .image2{
-    height: 575px;
-} */
-.images .div3{
-    position: absolute;
-    top: 0;
-    left: 68%;
-    width: 32%;
-    height: 20%;
-    /* border: 1px solid black; */
+.images .image3{
+    grid-column: span 2;
+    grid-row: span 1;
 }
-.images .div4{
-    position: absolute;
-    top: 22%;
-    left: 0;
-    width: 15%;
-    height: 20%;
-    /* border: 1px solid black; */
+.images .image4,.images .image5{
+    grid-column: span 1;
+    grid-row: span 1;
 }
-.images .div5{
-    position: absolute;
-    top: 22%;
-    left: 17%;
-    width: 15%;
-    height: 20%;
-    /* border: 1px solid black; */
+.images .image6{
+    grid-column: span 2;
+    grid-row: span 1;
 }
-/* .images .image4,.images .image5{
-    height: 275px;
-} */
-.images .div6{
-    position: absolute;
-    top: 22%;
-    left: 68%;
-    width: 32%;
-    height: 20%;
-    /* border: 1px solid black; */
+.images .image7{
+    grid-column: span 2;
+    grid-row: span 2;
 }
-.images .div7{
-    position: absolute;
-    top: 44%;
-    left: 0;
-    width: 32%;
-    height: 42%;
+.images .image8{
+    grid-column: span 2;
+    grid-row: span 1;
 }
-.images .div8{
-    position: absolute;
-    top: 44%;
-    left: 34%;
-    width: 32%;
-    height: 20%;
+.images .image9{
+    grid-column: span 2;
+    grid-row: span 2;
 }
-.images .div9{
-    position: absolute;
-    top: 44%;
-    left: 68%;
-    width: 32%;
-    height: 42%;
+.images .image10,.images .image11{
+    grid-column: span 1;
+    grid-row: span 1;
 }
-.images .div10{
-    position: absolute;
-    top: 66%;
-    left: 34%;
-    width: 15%;
-    height: 20%;
-}
-.images .div11{
-    position: absolute;
-    top: 66%;
-    left: 51%;
-    width: 15%;
-    height: 20%;
-}
+
 /* .images img:focus{
     position: absolute; 
     z-index: 999;
@@ -342,30 +293,7 @@ svg{
     top: 50%;
     transform: translateY(-50%);
 }
-/* .center1{
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 34.5%;
-}
-.center2{
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 52.5%;
-}
-.center3{
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 72%;
-}
-.center4{
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 89%;
-} */
+
 .center h1{
     font-size: 2rem;
     font-weight: 500;
@@ -665,94 +593,7 @@ footer p a:hover{
         width: 70%;
     }
 
-    .section2{
-        height: 2300px;
-    }
-    .images{
-        position: relative;
-        width: 100%;
-        height: 70%;
-    }
-    .images .div1{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 49%;
-        height: 20%;
-    }
-    .images .div2{
-        position: absolute;
-        top: 0;
-        left: 51%;
-        width: 49%;
-        height: 42%;
-    }
-    .images .div3{
-        position: absolute;
-        top: 22%;
-        left: 0;
-        width: 49%;
-        height: 20%;
-    }
-    .images .div4{
-        position: absolute;
-        top: 44%;
-        left: 51%;
-        width: 23%;
-        height: 20%;
-        
-    }
-    .images .div5{
-        position: absolute;
-        top: 44%;
-        left: 77%;
-        width: 23%;
-        height: 20%;
-        
-    }
-    .images .div6{
-        position: absolute;
-        top: 44%;
-        left: 0;
-        width: 49%;
-        height: 20%;
-    }
-    .images .div7{
-        position: absolute;
-        top: 66%;
-        left: 0;
-        width: 49%;
-        height: 42%;
-    }
-     .images .div8{
-        position: absolute;
-        top: 66%;
-        left: 51%;
-        width: 49%;
-        height: 20%;
-    }
-    
-    .images .div9{
-        position: absolute;
-        top: 88%;
-        left: 51%;
-        width: 49%;
-        height: 42%;
-    }
-    .images .div10{
-        position: absolute;
-        top: 110%;
-        left: 0%;
-        width: 23%;
-        height: 20%;
-    }
-    .images .div11{
-        position: absolute;
-        top: 110%;
-        left: 26%;
-        width: 23%;
-        height: 20%;
-    }
+   
     .section4{
         height: 1000px;
      }
@@ -843,94 +684,7 @@ footer p a:hover{
         flex-wrap: wrap;
     }
 
-    .section2{
-        height: 1700px;
-    }
-    .images{
-        position: relative;
-        width: 100%;
-        height: 90%;
-    }
-    .images .div1{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 49%;
-        height: 15%;
-    }
-    .images .div2{
-        position: absolute;
-        top: 0;
-        left: 51%;
-        width: 49%;
-        height: 31%;
-    }
-    .images .div3{
-        position: absolute;
-        top: 16%;
-        left: 0;
-        width: 49%;
-        height: 15%;
-    }
-    .images .div4{
-        position: absolute;
-        top: 32%;
-        left: 51%;
-        width: 23%;
-        height: 15%;
-        
-    }
-    .images .div5{
-        position: absolute;
-        top: 32%;
-        left: 77%;
-        width: 23%;
-        height: 15%;
-        
-    }
-    .images .div6{
-        position: absolute;
-        top: 32%;
-        left: 0;
-        width: 49%;
-        height: 15%;
-    }
-    .images .div7{
-        position: absolute;
-        top: 48%;
-        left: 0;
-        width: 49%;
-        height: 31%;
-    }
-     .images .div8{
-        position: absolute;
-        top: 48%;
-        left: 51%;
-        width: 49%;
-        height: 15%;
-    }
-    
-    .images .div9{
-        position: absolute;
-        top: 64%;
-        left: 51%;
-        width: 49%;
-        height: 31%;
-    }
-    .images .div10{
-        position: absolute;
-        top: 80%;
-        left: 0%;
-        width: 23%;
-        height: 15%;
-    }
-    .images .div11{
-        position: absolute;
-        top: 80%;
-        left: 26%;
-        width: 23%;
-        height: 15%;
-    } 
+   
      .section4{
         height: 1100px;
      }
@@ -952,9 +706,6 @@ footer p a:hover{
     .section1 .div1{
         width: 80%;
     }
-    .section2{
-        height: 1500px;
-    }
     .section2 .flex .left{
         width: 30%;
         
@@ -963,91 +714,6 @@ footer p a:hover{
         width: 70%;
         flex-wrap: wrap;
     }
-    .images{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    .images .div1{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 49%;
-        height: 13%;
-    }
-    .images .div2{
-        position: absolute;
-        top: 0;
-        left: 51%;
-        width: 49%;
-        height: 27%;
-    }
-    .images .div3{
-        position: absolute;
-        top: 14%;
-        left: 0;
-        width: 49%;
-        height: 13%;
-    }
-    .images .div4{
-        position: absolute;
-        top: 28%;
-        left: 51%;
-        width: 23%;
-        height: 13%;
-        
-    }
-    .images .div5{
-        position: absolute;
-        top: 28%;
-        left: 77%;
-        width: 23%;
-        height: 13%;
-        
-    }
-    .images .div6{
-        position: absolute;
-        top: 28%;
-        left: 0;
-        width: 49%;
-        height: 13%;
-    }
-    .images .div7{
-        position: absolute;
-        top: 42%;
-        left: 0;
-        width: 49%;
-        height: 27%;
-    }
-     .images .div8{
-        position: absolute;
-        top: 42%;
-        left: 51%;
-        width: 49%;
-        height: 13%;
-    }
-    
-    .images .div9{
-        position: absolute;
-        top: 56%;
-        left: 51%;
-        width: 49%;
-        height: 27%;
-    }
-    .images .div10{
-        position: absolute;
-        top: 70%;
-        left: 0%;
-        width: 23%;
-        height: 13%;
-    }
-    .images .div11{
-        position: absolute;
-        top: 70%;
-        left: 26%;
-        width: 23%;
-        height: 13%;
-    } 
     .section3{
         padding: 50px;
      }
@@ -1070,6 +736,9 @@ footer p a:hover{
     }
     .contact{
         padding-bottom: 0;
+    }
+    .section2 .images{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
    
 }
@@ -1098,9 +767,6 @@ footer p a:hover{
         top: 500px;
         width: 90%;
     }
-    .section2{
-        height: 2800px;
-    }
     .section2 .flex{
         display: block;
         
@@ -1115,70 +781,8 @@ footer p a:hover{
         flex-wrap: wrap;
         padding-bottom: 20px;
     }
-    .section2 .images .div{
-        position: static;
-        margin-bottom: 20px;
-        padding-left: 10px;
-    }
-    .images{
-        position: relative;
-        width: 100%;
-        height: 10%;
-    }
-    .images .div1{
-        width: 70%;
-        height: 70%;
-    }
-    .images .div2{
-        width: 70%;
-        height: 141%;
-    }
-    .images .div3{
-      
-        width: 70%;
-        height: 70%;
-    }
-    .images .div4{
-        width: 33%;
-        height: 70%;
-        
-    }
-    .images .div5{
-        position: absolute;
-        top: 302.5%;
-        left: 37%;
-        width: 33%;
-        height: 70%;
-        
-    }
-    .images .div6{
-        width: 70%;
-        height: 70%;
-    }
-    .images .div7{
-        width: 70%;
-        height: 141%;
-    }
-     .images .div8{
-        width: 70%;
-        height: 70%;
-    }
-    
-    .images .div9{
-        width: 70%;
-        height: 141%;
-    }
-    .images .div10{
-        width: 33%;
-        height: 70%;
-    }
-    .images .div11{
-        position: absolute;
-        top: 830%;
-        left: 37%;
-        width: 33%;
-        height: 70%;
-    } 
+
+
     .section3{
         height: 1050px;
     }
@@ -1275,6 +879,12 @@ footer p a:hover{
 }
 
 @media screen and (max-width:460px) {
+    .section2{
+        max-height:410vh;
+    }
+    .section2 .images{
+        grid-template-columns: 1fr 1fr;
+    }
     .section3{
         height: 1420px;
         padding: 20px;
@@ -1318,46 +928,5 @@ footer p a:hover{
     .section5{
         height: 1500px;
     }
-
-    .images .div1{
-        width: 100%;
-    }
-    .images .div2{
-        width: 100%;
-    }
-    .images .div3{
-      
-        width: 100%;
-    }
-    .images .div4{
-        width: 48%;
-    }
-    .images .div5{
-        top: 302.5%;
-        left: 52%;
-        width: 48%;
-        
-    }
-    .images .div6{
-        width: 100%;
-    }
-    .images .div7{
-        width: 100%;
-    }
-     .images .div8{
-        width: 100%;
-    }
-    
-    .images .div9{
-        width: 100%;
-    }
-    .images .div10{
-        width: 48%;
-    }
-    .images .div11{
-        width: 48%;
-        left: 176px;
-        
-    } 
 }
 
